@@ -32,7 +32,7 @@ index.use("/api/task/", taskRouter);
 // connecting mongodb mongoose to our server
 const start = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_uri);
+    await mongoose.connect(process.env.MONGO_URI);
 
     console.log("Database connected");
     // start the server and listen on the specified port
